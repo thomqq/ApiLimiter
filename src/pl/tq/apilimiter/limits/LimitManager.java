@@ -1,35 +1,40 @@
-package pl.tq.apilimiter;
+package pl.tq.apilimiter.limits;
 
+import javax.inject.Inject;
+import javax.inject.Singleton;
 import java.util.HashMap;
 import java.util.List;
 
+@Singleton
+public
 class LimitManager {
     private HashMap<String, LimitClass> limits = new HashMap<>();
 
+    @Inject
     LimitManager() {
     }
 
-    void addLimitIfNotAdded(String id, LimitClass limitClass) {
+    public void addLimitIfNotAdded(String id, LimitClass limitClass) {
         if (!limits.containsKey(id)) {
             limits.put(id, limitClass);
         }
     }
 
-    void process() {
+    public void process() {
         for (String key : limits.keySet()) {
             limits.get(key).process();
         }
     }
 
-    void addLimitIfNotAdded(String id, List<LimitClass> limitClasses) {
+    public void addLimitIfNotAdded(String id, List<LimitClass> limitClasses) {
         for (LimitClass limit : limitClasses) {
             addLimitIfNotAdded(id, limit);
         }
     }
 
-    void loadAllLimitClasses() {
+    public void loadAllLimitClasses() {
     }
 
-    void saveAllLimitClasses() {
+    public void saveAllLimitClasses() {
     }
 }

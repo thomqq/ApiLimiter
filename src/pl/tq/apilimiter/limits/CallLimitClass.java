@@ -1,10 +1,10 @@
-package pl.tq.apilimiter;
+package pl.tq.apilimiter.limits;
 
-import pl.tq.apilimiter.adnotations.LimitPeriod;
+import pl.tq.apilimiter.annotations.LimitPeriod;
 
 public class CallLimitClass extends LimitClass {
 
-    long currentAmount = 0;
+    private long currentAmount;
 
     public CallLimitClass(String counterName, Long amount, LimitPeriod period) {
         super(counterName, amount, period);

@@ -1,4 +1,4 @@
-package pl.tq.apilimiter.adnotations;
+package pl.tq.apilimiter.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

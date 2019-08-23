@@ -1,8 +1,8 @@
 package pl.tq.apilimiter.examplexervice;
 
 
-import pl.tq.apilimiter.adnotations.Limit;
-import pl.tq.apilimiter.adnotations.LimitPeriod;
+import pl.tq.apilimiter.annotations.Limit;
+import pl.tq.apilimiter.annotations.LimitPeriod;
 
 public class SomeApiImplementation implements SomeApi {
 
