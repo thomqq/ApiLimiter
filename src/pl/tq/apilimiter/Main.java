@@ -7,12 +7,12 @@ public class Main {
 
     public static void main(String[] args) {
         SomeApi api = ApiFactory.createApiPort();
-        System.out.println(api.getMp3ForSentence("roki", 1));
-        System.out.println(api.getMp3ForSentence("roki", 1));
-        System.out.println(api.getMp3ForSentence("roki", 1));
-        System.out.println(api.getMp3ForSentence("roki", 1));
-        System.out.println(api.getMp3ForSentence("roki", 1));
-        System.out.println(api.getMp3ForSentence("roki", 1));
-        System.out.println(api.getMp3ForSentence("roki", 1));
+        System.out.println(api.getMp3ForSentence("test", 1));
+        System.out.println(api.getMp3ForSentence("test", 1));
+        System.out.println(api.getMp3ForSentence("test", 1));
+        System.out.println(api.getMp3ForSentence("test", 1));
+        System.out.println(api.getMp3ForSentence("test", 1));
+        System.out.println(api.getMp3ForSentence("test", 1));
+        System.out.println(api.getMp3ForSentence("test", 1));
     }
 }

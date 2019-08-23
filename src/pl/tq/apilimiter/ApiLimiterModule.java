@@ -11,8 +11,9 @@ public class ApiLimiterModule extends AbstractModule {
     @Override
     protected void configure() {
         bind(SomeApi.class).to(SomeApiImplementation.class);
-        ApiLimitationWorker apiLimitationWorker = new ApiLimitationWorker();
-        apiLimitationWorker.loadAllLimitClasses();
+        LimitManager limitManager = new LimitManager();
+        limitManager.loadAllLimitClasses();
+        ApiLimitationWorker apiLimitationWorker = new ApiLimitationWorker(limitManager);
         bindInterceptor(Matchers.any(), Matchers.annotatedWith(Limit.class), apiLimitationWorker);
     }
 }
