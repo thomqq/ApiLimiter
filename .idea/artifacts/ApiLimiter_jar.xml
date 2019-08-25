@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ApiLimiter:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ApiLimiter_jar</output-path>
+    <root id="archive" name="ApiLimiter.jar">
+      <element id="module-output" name="ApiLimiter" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/guice-4.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javax.inject-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/aopalliance-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/guava-19.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
